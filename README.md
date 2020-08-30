@@ -23,11 +23,13 @@
 ## Standart-parametrlər
 Widgetlərə keçməzdən öncə gəlin onların ölçüləri, rəngləri, font tipləri kimi ümumi parametrləri ilə tanış olaq.
 
-Hər widgetin öz görünüş və davranışlarını xarakterizə edən `fonts`, `colors`, `sizes`, `text`, `labels` və.s. kimi parametrləri mövcuddur.
+Hər widgetin öz görünüş və davranışlarını xarakterizə edən `font`, `color`, `size`, `text`, `label` və.s. kimi parametrləri mövcuddur.
 
-You can specify options when calling the widget's constructor using keyword arguments such as `text='HQ!'` or `height=24`.
+Parametrləri təyin etmək üçün widgetin constructorunda onu cağırmaq və dəyərini vermək lazımdır. Məsələn `Button(window, text='Ok', fg='Blue')`.
 
-After you have created a widget, you can later change any option by using the widget's `.config()` method. You can retrieve the current setting of any option by using the widget's `.cget()` method. See Section 26, “Universal widget methods” for more on these methods.
+Widget yaradıldıqdan sonra onun hər hansı parametrini daha sonra dəyişmək lazım gələrsə `.config()` metodundan istifadə edilir. Həmçinin biz yaradılmış widgetin hər hansı parametrinin dəyərini öyrənmək üçün `.cget()` metdonundan istifadə edirik
+
+After you have created a widget, you can later change any option by using the widget's `.config()` method. You can retrieve the current setting of any option by using the widget's `.cget()` method.
 
 - [Ölçülər](#Ölçülər)
 - [Koordinasiya sistemi](#Koordinasiya-sistemi)
