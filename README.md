@@ -4,6 +4,7 @@
 
 
 Əgər yaratdığım bu kontent sizə köməy etdisə və ya bəyəndinizsə📖, dəstək olmaq üçün bunlardan birini etməyiniz kifayətdir 👍| ⭐| 👏
+
 # Mövzular
 - [Standart parametrlər](#Standart-parametrlər)
 - [Button](#Button)
@@ -47,11 +48,11 @@ Həmçinin yaradılmış widgetin hər hansı parametrinin dəyərini göstərm�
 - [Matching stipple patterns](#Matching-stipple-patterns)
 
 ### Ölçülər
-Various lengths, widths, and other dimensions of widgets can be described in many different units.
+Widgetlərin uzunluq, en və başqa ölçü dəyərləri müxtəlif vahidlərlə göstərilə bilər.
 
-If you set a dimension to an integer, it is assumed to be in pixels.
+Əgər ölçünü integer kimi qeyd etsəniz bu proqram tərəfinfən pixel olaraq qəbul edilir.
 
-You can specify units by setting a dimension to a string containing a number followed by:
+Ölçü dəyərləri aşağıdakı cədvələ uyğun rəqəmli stringlər şəkilində verilir:
 
 | Command | Description |
 | --- | --- |
@@ -60,10 +61,10 @@ You can specify units by setting a dimension to a string containing a number fol
 | `m` | Millimeters |
 | `p` | Printer's points (about 1/72″) |
 
-
 ### Koordinasiya-sistemi
-As in most contemporary display systems, the origin of each coordinate system is at its upper left corner, with the x coordinate increasing toward the right, and the y coordinate increasing toward the bottom.
-The base unit is the pixel, with the top left pixel having coordinates (0,0). Coordinates that you specify as integers are always expressed in pixels, but any coordinate may be specified as a dimensioned quantity.
+Müasir koordinasiya sistemlərində olduğu kimi, hər bir koordinat sisdeminin başlanğıcı sol üst küncdədir. X koordinatı sağa, Y koordinatı isə sola getdikcə artır.
+
+Əsas ölçü vahidi pikseldir. Ən yuxarı soldakı pikselin koordinatları (0,0). İnteger kimi verilən koordinatlar piksellər ilə işlənir, lakin bütün koordinatlar ölçü vahidləri ilə verilə bilər.
 
 ### Rənglər
 
