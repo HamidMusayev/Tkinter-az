@@ -1,5 +1,5 @@
 [<img src="https://github.com/hemidvsmusayev/Tkinter/blob/master/ww_images/logo.png?raw=true" align="center" width="750">](https://docs.python.org/3/library/tkinter.html)
-# Haqqında -- STILL IN DEVELOP
+# Haqqında -- TEZLİKLƏ
 <a href="https://docs.python.org/3/library/tkinter.html">Tkinter</a> Python üçün yaradılmış standart GUİ (Grafik İstifadəçi interfeysi) paketidir.
 
 
@@ -18,7 +18,7 @@
 - [Scrolls](#Scrolls)
 - [Text widgets](#Text-widgets)
 - [Windows](#Windows)
-- [Bonus-Kitablar](#Kitablar)
+- [Bonus-Kitablar](#Bonus-Kitablar)
 
 ## Standart-parametrlər
 Widgetlərə keçməzdən öncə gəlin onların ölçüləri, rəngləri, font tipləri kimi ümumi parametrləri ilə tanış olaq.
@@ -29,7 +29,7 @@ Parametrləri təyin etmək üçün widgetin constructorunda onu cağırmaq və 
 
 Widget yaradıldıqdan sonra onun hər hansı parametrini daha sonra dəyişmək lazım gələrsə `.config()` metodundan istifadə edilir.
  
-Həmçinin yaradılmış widgetin hər hansı parametrinin dəyərini öyrənmək üçün `.cget()` metdonundan istifadə edilir.
+Həmçinin yaradılmış widgetin hər hansı parametrinin dəyərini göstərmək üçün `.cget()` metdonundan istifadə edilir.
 
 - [Ölçülər](#Ölçülər)
 - [Koordinasiya sistemi](#Koordinasiya-sistemi)
@@ -203,7 +203,7 @@ The relief style of a widget refers to certain simulated 3-D effects around the 
 
 ## Windows
 root.resizable(False, False) 
-## Bonus
+## Bonus-Kitablar
 ### More references
 - <a href="https://web.archive.org/web/20190524140835/https://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html">Tkinter 8.5</a> reference
 - <a href="https://coderslegacy.com/python/python-gui/">CodersLegacy</a> blogs Python GUI
