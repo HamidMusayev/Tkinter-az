@@ -89,7 +89,7 @@ Tkinter də rəngləri təyin etmək üçün iki seçim mövcuddur.
 
 Məsələn, '#fff' ağ, '#000000' qara, '#000fff000' is açıq yaşıl, and '#00ffff' cyan (yaşıl ilə göy qarışığı).
 
-Rəngləri [buradan](https://www.google.com/search?q=color+picker) incələyə bilərsiniz. Və ya google-nin material dizayn rəngləri [buradan](https://material.io/resources/color/#!/?view.left=0&view.right=0)
+Rəngləri [buradan](https://www.google.com/search?q=color+picker) və ya Google-nin Material design rəngləri [buradan](https://material.io/resources/color/#!/?view.left=0&view.right=0) incələyə bilərsiniz.
 
 ### Font-tipləri
 
