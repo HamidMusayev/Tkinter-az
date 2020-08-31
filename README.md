@@ -93,13 +93,13 @@ Rəngləri [buradan](https://www.google.com/search?q=color+picker) incələyə b
 
 ### Font-tipləri
 
-[Fonts Example](https://github.com/hemidvs/Tkinter/blob/master/Type%20fonts/type_fonts.py)
+[Nümunə](https://github.com/hemidvs/Tkinter/blob/master/Type%20fonts/type_fonts.py)
 
-Depending on your platform, there may be up to three ways to specify type style.
+İstfadə etdiyiniz platformadan asılı olaraq yazı stilini təyin etmək üçün 3 üsul var.
 
-- As a tuple whose first element is the font family, followed by a size (in points if positive, in pixels if negative), optionally followed by a string containing one or more of the style modifiers bold, italic, underline, and overstrike.
-
-  Examples: ('Helvetica', '16') for a 16-point Helvetica regular; ('Times', '24', 'bold italic') for a 24-point Times bold italic. For a 20-pixel Times bold font, use ('Times', -20, 'bold').
+- Tuple şəkilində. Burada birinci element font ailəsi(font family), ikinci ölçüsü(əgər müsbət işarəli olarsa point olaraq işlənir, mənfi işarəlidirsə piksellərlə), ehtiyac yarandıqa isə üçüncü element kimi yazının digər stilini `'bold'`, `'italic'`, `'underline'` və `'overstrike'` verə bilərik.
+  
+  Məsələn: `('Helvetica', '16')` 16-point Helvetica regular; `('Times', '24', 'bold italic')` 24-point Times bold italic. 20-piksel Times bold font üçün isə `('Times', -20, 'bold')`.
   
 - You can create a “font object” by importing the tkFont module and using its Font class constructor:
   
