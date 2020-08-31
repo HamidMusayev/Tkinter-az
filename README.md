@@ -57,12 +57,12 @@ Widgetlərin uzunluq, en və başqa ölçü dəyərləri müxtəlif vahidlərlə
 
 Ölçü dəyərləri aşağıdakı cədvələ uyğun rəqəmli stringlər şəkilində verilir:
 
-| Command | Description |
+| Yazılışı | İzahı |
 | --- | --- |
-| `c` | Centimeters |
-| `i` | Inches |
-| `m` | Millimeters |
-| `p` | Printer's points (about 1/72″) |
+| `c` | Santimetr |
+| `i` | İnc |
+| `m` | Millimetr |
+| `p` | point(1/72 inc) |
 
 ### Koordinasiya-sistemi
 Müasir koordinasiya sistemlərində olduğu kimi, hər bir koordinat sisdeminin başlanğıcı sol üst küncdədir. X koordinatı sağa, Y koordinatı isə sola getdikcə artır.
@@ -81,7 +81,7 @@ Tkinter də rəngləri təyin etmək üçün iki seçim mövcuddur.
 
 - Rənglərin qırmızı, yaşıl və mavi hexadecimal formatına uyğun string şəkilində verilməsi:
 
-| Command | Description |
+| Yazılışı | İzahı |
 | --- | --- |
 | `#rgb` | 4 bitlik |
 | `#rrggbb` | 8 bitlik |
