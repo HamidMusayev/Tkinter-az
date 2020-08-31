@@ -7,6 +7,9 @@
 
 # Mövzular
 - [Standart parametrlər](#Standart-parametrlər)
+- [ttk modulu haqqında](#tkk-modulu-haqqında)
+- [Paketlərin import edilməsi](#Paketlərin-import-edilməsi)
+- [Widget stilləri](#Widget-stilləri)
 - [Button](#Button)
 - [Canvas](#Canvas)
 - [Check button](#Check-button)
@@ -70,21 +73,23 @@ Müasir koordinasiya sistemlərində olduğu kimi, hər bir koordinat sisdeminin
 
 ### Rənglər
 
-[Color chooser example](https://github.com/hemidvs/Tkinter/blob/master/Color%20chooser/color_chooser.py)
+[Color chooser nümunəsi](https://github.com/hemidvs/Tkinter/blob/master/Color%20chooser/color_chooser.py)
 
-There are two general ways to specify colors in Tkinter.
+Tkinter də rəngləri təyin etmək üçün iki seçim mövcuddur.
 
-- You can use a string specifying the proportion of red, green, and blue in hexadecimal digits:
+- Standart rənglərin adları ilə verilməsi: `'white'`, `'black'`, `'red'`, `'green'`, `'blue'`, `'cyan'`, `'yellow'` və `'magenta'`
+
+- Rənglərin qırmızı, yaşıl və mavi hexadecimal formatına uyğun string şəkilində verilməsi:
 
 | Command | Description |
 | --- | --- |
-| `#rgb` | Four bits per color |
-| `#rrggbb` | Eight bits per color |
-| `#rrrgggbbb` | Twelve bits per color |
+| `#rgb` | 4 bitlik |
+| `#rrggbb` | 8 bitlik |
+| `#rrrgggbbb` | 16 bitlik |
 
-For example, '#fff' is white, '#000000' is black, '#000fff000' is pure green, and '#00ffff' is pure cyan (green plus blue).
+Məsələn, '#fff' ağ, '#000000' qara, '#000fff000' is açıq yaşıl, and '#00ffff' cyan (yaşıl ilə göy qarışığı).
 
-- You can also use any locally defined standard color name. The colors 'white', 'black', 'red', 'green', 'blue', 'cyan', 'yellow', and 'magenta' will always be available. Other names may work, depending on your local installation.
+Rəngləri [buradan](https://www.google.com/search?q=color+picker) incələyə bilərsiniz. Və ya google-nin material dizayn rəngləri [buradan](https://material.io/resources/color/#!/?view.left=0&view.right=0)
 
 ### Font-tipləri
 
@@ -173,6 +178,7 @@ Anchors are also used to define where text is positioned relative to a reference
 The relief style of a widget refers to certain simulated 3-D effects around the outside of the widget. Here is a screen shot of a row of buttons exhibiting all the possible relief styles:
 
 <img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/relief.png?raw=true" align="center" width="400">
+
 ### Bitmaps
 ### Cursors
 ### Images
@@ -181,6 +187,15 @@ The relief style of a widget refers to certain simulated 3-D effects around the 
 ### Cap-and-join-styles
 ### Dash-patterns
 ### Matching-stipplep-atterns
+
+
+
+
+## tkk-modulu-haqqında
+
+## Paketlərin-import-edilməsi
+
+## Widget-stilləri
 
 ## Button
 
@@ -206,7 +221,7 @@ The relief style of a widget refers to certain simulated 3-D effects around the 
 
 ## Windows
 root.resizable(False, False) 
+
 ## Bonus-Kitablar
-### More references
 - <a href="https://web.archive.org/web/20190524140835/https://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html">Tkinter 8.5</a> reference
 - <a href="https://coderslegacy.com/python/python-gui/">CodersLegacy</a> blogs Python GUI
