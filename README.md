@@ -3,7 +3,7 @@
 <a href="https://docs.python.org/3/library/tkinter.html">Tkinter</a> Python üçün yaradılmış standart GUİ (Grafik İstifadəçi interfeysi) paketidir.
 
 
-Əgər yaratdığım bu kontent sizə köməy etdisə və ya bəyəndinizsə📖, dəstək olmaq üçün bunlardan birini etməyiniz kifayətdir 👍| ⭐| 👏
+Əgər bu kontent işinizə yaradısa və ya bəyəndinizsə 📖, dəstək olmaq üçün bunlardan birini etməyiniz kifayətdir 👍| ⭐| 👏
 
 # Mövzular
 - [Standart parametrlər](#Standart-parametrlər)
@@ -72,7 +72,6 @@ Müasir koordinasiya sistemlərində olduğu kimi, hər bir koordinat sisdeminin
 <img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/coordinate.PNG?raw=true">
 
 ### Rənglər
-
 [Color chooser nümunəsi](https://github.com/hemidvs/Tkinter/blob/master/Color%20chooser/color_chooser.py)
 
 Tkinter də rəngləri təyin etmək üçün iki seçim mövcuddur.
@@ -89,10 +88,9 @@ Tkinter də rəngləri təyin etmək üçün iki seçim mövcuddur.
 
 Məsələn, '#fff' ağ, '#000000' qara, '#000fff000' is açıq yaşıl, and '#00ffff' cyan (yaşıl ilə göy qarışığı).
 
-Rəngləri [buradan](https://www.google.com/search?q=color+picker) və ya Google-nin Material design rəngləri [buradan](https://material.io/resources/color/#!/?view.left=0&view.right=0) incələyə bilərsiniz.
+Rəngləri [buradan](https://www.google.com/search?q=color+picker) və ya Google-nin Material design rəngləri [buradan](https://material.io/resources/color/#!/?view.left=0&view.right=0) incələyə bilərik.
 
 ### Font-tipləri
-
 [Nümunə](https://github.com/hemidvs/Tkinter/blob/master/Type%20fonts/type_fonts.py)
 
 İstfadə etdiyiniz platformadan asılı olaraq yazı stilini təyin etmək üçün 3 üsul var.
@@ -100,61 +98,63 @@ Rəngləri [buradan](https://www.google.com/search?q=color+picker) və ya Google
 - Tuple şəkilində. Burada birinci element font ailəsi(font family), ikinci ölçüsü(əgər müsbət işarəli olarsa point olaraq işlənir, mənfi işarəlidirsə piksellərlə), ehtiyac yarandıqa isə üçüncü element kimi yazının digər stilini `'bold'`, `'italic'`, `'underline'` və `'overstrike'` verə bilərik.
   
   Məsələn: `('Helvetica', '16')` 16-point Helvetica regular; `('Times', '24', 'bold italic')` 24-point Times bold italic. 20-piksel Times bold font üçün isə `('Times', -20, 'bold')`.
-  
-- You can create a “font object” by importing the tkFont module and using its Font class constructor:
+
+- tkFont modulunu import edərək Font sinifinə aid yeni bir "font obyekti" təyin etməklə:
   
   `import tkFont`
   
   `font = tkFont.Font(option, ...)`
   
-   where the options include:
+   parametrlərə bunlar daxildir:
   
-| Command | Description |
+| Yazılışı | İzahı |
 | --- | --- |
-| `family` | The font family name as a string. |
-| `size` | The font height as an integer in points. To get a font n pixels high, use -n. |
-| `weight` | 'bold' for boldface, 'normal' for regular weight. |
-| `slant` | 'italic' for italic, 'roman' for unslanted. |
-| `underline` | 1 for underlined text, 0 for normal. |
-| `overstrike` | 1 for overstruck text, 0 for normal. |
+| `family` | String formatında verilmiş font ailəsi adı. |
+| `size` | Font ölçüsü (integer formatında - points kimi). n piksel ölçüsündə yazmaq üçün -n. |
+| `weight` | 'bold' - qalın , 'normal' - normal. |
+| `slant` | 'italic' - italic, 'roman' - cursiv. |
+| `underline` | 1 - altı xəttli yazı, 0 - normal. |
+| `overstrike` | 1 - orta xəttli yazı, 0 - normal. |
 
-   For example, to get a 36-point bold Helvetica italic face:
-   
-   `helv36 = tkFont.Font(family='Helvetica', size=36, weight='bold')`
-    
-To get a list of all the families of fonts available on your platform, call this function:
+Məsələn: 36 point bold Helvetica italic tipli yazı üçün:
+  
+`helv36 = tkFont.Font(family='Helvetica', size=36, weight='bold')`
+
+Patformanızda mövcud olan bütün fontları görmək üçün:
   
   `tkFont.families()`
   
-The return value is a list of strings. Note: You must create your root window before calling this function.
+Geri Dönən dəyər string list şəkilində olacaq. Qeyd: Bu funksiyanı çağırmazdan öncə ana pəncərənizi(Window) yaratmalıyıq.
 
-These methods are defined on all `Font` objects:
+Bu metodlar bütün `Font` obyektlərində istidə olunur:
 
 `.actual(option=None)`
 
-If you pass no arguments, you get back a dictionary of the font's actual attributes, which may differ from the ones you requested. To get back the value of an attribute, pass its name as an argument.
+Əgər bu metodu çağırıb heçbir arqument verməsək, hazırki fontların mümkün bütün atributlarını döndürər
+////// If you pass no arguments, you get back a dictionary of the font's actual attributes, which may differ from the ones you requested. To get back the value of an attribute, pass its name as an argument.
 
 `.cget(option)`
 
-Returns the value of the given option.
+Verilmiş parametrin(option) hazırki dəyərini döndürür.
 
 `.configure(option, ...)`
 
-Use this method to change one or more options on a font. For example, if you have a Font object called titleFont, if you call titleFont.configure(family='times', size=18), that font will change to 18pt Times and any widgets that use that font will change too.
+Bu metodu istifadə etməklə fontun bir və ya bir neçə parametrinin dəyərini dəyişmək mümkündür. Məsələn: Əgər sizin `titleFont` adlı Font obyektiniz varsa `titleFont.configure(family='times', size=18)` yazılışı ilə fontun ölçüsü 18pt, Times stilinə keçir və bu obyekti istifadə edən bütün widgetlər ona uyğun olaraq dəyişir.
 
 `.copy()`
 
-Returns a copy of a Font object.
+Font obyektini köçürür və döndürür.
 
 `.measure(text)`
 
-Pass this method a string, and it will return the number of pixels of width that string will take in the font. Warning: some slanted characters may extend outside this area.
+Bu metod içərisinə yazılmış string mətnin həmin font ilə yazılışı zamanı uzunluğun tutduğu piksellərin sayını döndürür. Qeyd: bəzi kursiv yazılarda dəqiq olmaya bilər.
 
 `.metrics(option)`
 
-If you call this method with no arguments, it returns a dictionary of all the font metrics. You can retrieve the value of just one metric by passing its name as an argument. Metrics include:
+Əgər bu metodu arqumentsiz çağırsaq, bütün fontlar lüğətini döndürər. 
+\\\\\\\If you call this method with no arguments, it returns a dictionary of all the font metrics. You can retrieve the value of just one metric by passing its name as an argument. Metrics include:
 
-| Command | Description |
+| Yazılışı | İzahı |
 | --- | --- |
 | `ascent` | Number of pixels of height between the baseline and the top of the highest ascender. |
 | `descent` | Number of pixels of height between the baseline and the bottom of the lowest ascender. |
