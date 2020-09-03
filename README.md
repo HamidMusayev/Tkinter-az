@@ -9,22 +9,37 @@
 - [Standart parametrlər](#Standart-parametrlər)
 - [ttk modulu haqqında](#tkk-modulu-haqqında)
 - [Paketlərin import edilməsi](#Paketlərin-import-edilməsi)
-- [Widget stilləri](#Widget-stilləri)
-- [Button](#Button)
+> tkk widgetləri
+- [tkk.Button](#Button)
+- [tkk.Check button](#Check-button)
+- [tkk.Combo box](#Combo-box)
+- [tkk.Entry](#Entry)
+- [tkk.Frame](#Frame)
+- [tkk.Label](#Label)
+- [tkk.Label frame](#Label-frame)
+- [tkk.Menu button](#Menu-button)
+- [tkk.Notebook](#Notebook)
+- [tkk.Paned window](#Paned-window)
+- [tkk.Progressbar](#Progressbar)
+- [tkk.Radio button](#Radio-button)
+- [tkk.Scale](#Scale)
+- [tkk.Scrollbar](#Scrollbar)
+- [tkk.Separator](#Separator)
+- [tkk.Sizegrip](#Sizegrip)
+- [tkk.Tree view](#Tree-view)
+- [Styling tkk widgets](#Styling-tkk-widgets)
+- [Methods common to all tkk widgets](#Methods-common-to-all-tkk-widgets)
+> Başqa tkinter widgetləri
 - [Canvas](#Canvas)
-- [Check button](#Check-button)
-- [Frames](#Frames)
 - [List box](#List-box)
 - [Menu](#Menu)
 - [Message box](#Message-box)
-- [Paned window](#Paned-window)
-- [Radio button](#Radio-button)
-- [Scrolls](#Scrolls)
 - [Text widgets](#Text-widgets)
 - [Windows](#Windows)
-- [Bonus-Kitablar](#Bonus-Kitablar)
+- [Bonus](#Bonus)
 
 ## Standart-parametrlər
+
 Widgetlərə keçməzdən öncə gəlin onların ölçüləri, rəngləri, font tipləri kimi ümumi parametrləri ilə tanış olaq.
 
 Hər widgetin öz görünüş və davranışlarını xarakterizə edən `font`, `color`, `size`, `text`, `label` və.s. kimi parametrləri mövcuddur.
@@ -179,9 +194,77 @@ Widgetin Relief stili onun 3-d effektlərini təyin edir. Məsələn: button ü�
 <img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/relief.png?raw=true" align="center" width="400">
 
 ### Bitmaps
+
+For bitmap options in widgets, these bitmaps are guaranteed to be available:
+
+<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/bitmap.PNG?raw=true" width="400">
+
+The graphic above shows Button widgets bearing the standard bitmaps. From left to right, they are
+`'error'`, `'gray75'`, `'gray50'`, `'gray25'`, `'gray12'`, `'hourglass'`, `'info'`, `'questhead'`,
+`'question'`, and `'warning'`.
+You can use your own bitmaps. Any file in .xbm (X bit map) format will work. In place of a standard
+bitmap name, use the string '@' followed by the pathname of the .xbm file.
+
 ### Cursors
+
+There are quite a number of different mouse cursors available. Their names and graphics are shown here. The exact graphic may vary according to your operating system.
+
+<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/cursor.PNG?raw=true" width="400">
+<img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/cursors.PNG?raw=true" width="400">
+
 ### Images
+
+There are three general methods for displaying graphic images in your Tkinter application.
+
+- To display bitmap (two-color) images in the `.xbm` format, refer to [The BitmapImage class](#The-BitmapImage-class)
+
+- To display full-color images in the `.gif`, `.pgm`, or .ppm format, refer to [The PhotoImage class](#The-PhotoImage-class)
+
+- The Python Imaging Library (PIL) supports images in a much wider variety of formats. Its ImageTk class is specifically designed for displaying images within Tkinter applications.
+
+#### The-BitmapImage-class
+
+To display a two-color image in the .xbm format, you will need this constructor:
+
+`tk.BitmapImage(file=f[, background=b][, foreground=c])`
+
+where f is the name of the .xbm image file.
+
+Normally, foreground (1) bits in the image will be displayed as black pixels, and background (0) bits in the image will be transparent. To change this behavior, use the optional `background=b` option to
+set the background to color b, and the optional `foreground=c` option to set the foreground to color c. For color specification, see Section [Colors](#Colors).
+
+This constructor returns a value that can be used anywhere Tkinter expects an image. For example, to display an image as a label, use a Label widget (see Section 12, [Label widget](#Label) and supply the `BitmapImage` object as the value of the `image` option:
+
+`logo = tk.BitmapImage('logo.xbm', foreground='red')
+Label(image=logo).grid()`
+
+#### The-PhotoImage-class
+
+To display a color image in `.gif`, `.pgm`, or `.ppm` format, you will need this constructor:
+
+`tk.PhotoImage(file=f)`
+
+where f is the name of the image file. The constructor returns a value that can be used anywhere Tkinter
+expects an image.
+
 ### Geometry-strings
+
+A geometry string is a standard way of describing the size and location of a top-level window on a desktop.
+
+A geometry string has this general form: 
+
+`'wxh±x±y'`
+
+where:
+
+- The w and h parts give the window width and height in pixels. They are separated by the character 'x'.
+
+- If the next part has the form +x, it specifies that the left side of the window should be x pixels from the left side of the desktop. If it has the form -x, the right side of the window is x pixels from the right side of the desktop.
+
+- If the next part has the form +y, it specifies that the top of the window should be y pixels below the top of the desktop. If it has the form -y, the bottom of the window will be y pixels above the bottom edge of the desktop.
+
+For example, a window created with `geometry='120x50-0+20'` would be 120 pixels wide by 50 pixels high, and its top right corner will be along the right edge of the desktop and 20 pixels below the top edge.
+
 ### Window-names
 ### Cap-and-join-styles
 ### Dash-patterns
