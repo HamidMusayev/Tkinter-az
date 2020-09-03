@@ -1,11 +1,13 @@
 [<img src="https://github.com/hemidvsmusayev/Tkinter/blob/master/ww_images/logo.png?raw=true" align="center" width="750">](https://docs.python.org/3/library/tkinter.html)
 # Haqqında -- TEZLİKLƏ
+
 <a href="https://docs.python.org/3/library/tkinter.html">Tkinter</a> Python üçün yaradılmış standart GUİ (Grafik İstifadəçi interfeysi) paketidir.
 
 
 Əgər bu kontent işinizə yaradısa və ya bəyəndinizsə 📖, dəstək olmaq üçün bunlardan birini etməyiniz kifayətdir 👍| ⭐| 👏
 
 # Mövzular
+
 - [Standart parametrlər](#Standart-parametrlər)
 - [ttk modulu haqqında](#tkk-modulu-haqqında)
 - [Paketlərin import edilməsi](#Paketlərin-import-edilməsi)
@@ -66,6 +68,7 @@ Həmçinin yaradılmış widgetin hər hansı parametrinin dəyərini göstərm�
 - [Matching stipple patterns](#Matching-stipple-patterns)
 
 ### Ölçülər
+
 Widgetlərin uzunluq, en və başqa ölçü dəyərləri müxtəlif vahidlərlə göstərilə bilər.
 
 Əgər ölçünü integer kimi qeyd etsəniz bu proqram tərəfinfən pixel olaraq qəbul edilir.
@@ -80,6 +83,7 @@ Widgetlərin uzunluq, en və başqa ölçü dəyərləri müxtəlif vahidlərlə
 | `p` | point(1/72 inc) |
 
 ### Koordinasiya-sistemi
+
 Müasir koordinasiya sistemlərində olduğu kimi, hər bir koordinat sisdeminin başlanğıcı sol üst küncdədir. X koordinatı sağa, Y koordinatı isə sola getdikcə artır.
 
 Əsas ölçü vahidi pikseldir. Ən yuxarı soldakı pikselin koordinatları (0,0). İnteger kimi verilən koordinatlar piksellər ilə işlənir, lakin bütün koordinatlar ölçü vahidləri ilə verilə bilər.
@@ -87,6 +91,7 @@ Müasir koordinasiya sistemlərində olduğu kimi, hər bir koordinat sisdeminin
 <img src="https://github.com/hemidvs/Tkinter-en/blob/master/ww_images/coordinate.PNG?raw=true">
 
 ### Rənglər
+
 [Color chooser nümunəsi](https://github.com/hemidvs/Tkinter/blob/master/Color%20chooser/color_chooser.py)
 
 Tkinter də rəngləri təyin etmək üçün iki seçim mövcuddur.
@@ -106,6 +111,7 @@ Məsələn, '#fff' ağ, '#000000' qara, '#000fff000' is açıq yaşıl, and '#00
 Rəngləri [buradan](https://www.google.com/search?q=color+picker) və ya Google-nin Material design rəngləri [buradan](https://material.io/resources/color/#!/?view.left=0&view.right=0) incələyə bilərik.
 
 ### Font-tipləri
+
 [Nümunə](https://github.com/hemidvs/Tkinter/blob/master/Type%20fonts/type_fonts.py)
 
 İstfadə etdiyiniz platformadan asılı olaraq yazı stilini təyin etmək üçün 3 üsul var.
@@ -177,6 +183,7 @@ Bu metod içərisinə yazılmış string mətnin həmin font ilə yazılışı z
 | `linespace` | Number of pixels of height total. This is the leading of type set solid in the given font. |
 
 ### Kənarlar
+
 The Tkinter module defines a number of anchor constants that you can use to control where items are positioned relative to their context. For example, anchors can specify where a widget is located inside a frame when the frame is bigger than the widget.
 
 These constants are given as compass points, where north is up and west is to the left.
@@ -189,6 +196,7 @@ For example, if you create a small widget inside a large frame and use the `anch
 
 Anchors are also used to define where text is positioned relative to a reference point. For example, if you use `tk.CENTER` as a text anchor, the text will be centered horizontally and vertically around the reference point. Anchor `tk.NW` will position the text so that the reference point coincides with the northwest (top left) corner of the box containing the text. Anchor `tk.W` will center the text vertically around the reference point, with the left edge of the text box passing through that point, and so on.
 ### Relief-stilləri
+
 Widgetin Relief stili onun 3-d effektlərini təyin edir. Məsələn: button üçün aşağıdakı stillər var:
 
 <img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/relief.png?raw=true" align="center" width="400">
