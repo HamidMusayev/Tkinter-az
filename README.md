@@ -195,6 +195,7 @@ The anchor constants are shown in this diagram:
 For example, if you create a small widget inside a large frame and use the `anchor=tk.SE` option, the widget will be placed in the bottom right corner of the frame. If you used `anchor=tk.N` instead, the widget would be centered along the top edge.
 
 Anchors are also used to define where text is positioned relative to a reference point. For example, if you use `tk.CENTER` as a text anchor, the text will be centered horizontally and vertically around the reference point. Anchor `tk.NW` will position the text so that the reference point coincides with the northwest (top left) corner of the box containing the text. Anchor `tk.W` will center the text vertically around the reference point, with the left edge of the text box passing through that point, and so on.
+
 ### Relief-stilləri
 
 Widgetin Relief stili onun 3-d effektlərini təyin edir. Məsələn: button üçün aşağıdakı stillər var:
