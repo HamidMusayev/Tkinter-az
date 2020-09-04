@@ -1,5 +1,6 @@
 [<img src="https://github.com/hemidvsmusayev/Tkinter/blob/master/ww_images/logo.png?raw=true" align="center" width="750">](https://docs.python.org/3/library/tkinter.html)
 # Haqqında -- TEZLİKLƏ
+[![forthebadge made-with-python](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 <a href="https://docs.python.org/3/library/tkinter.html">Tkinter</a> Python üçün yaradılmış standart GUİ (Grafik İstifadəçi interfeysi) paketidir.
 
@@ -151,7 +152,6 @@ Bu metodlar bütün `Font` obyektlərində istidə olunur:
 
 `.actual(option=None)`
 
-Əgər bu metodu çağırıb heçbir arqument verməsək, hazırki fontların mümkün bütün atributlarını döndürər
 ////// If you pass no arguments, you get back a dictionary of the font's actual attributes, which may differ from the ones you requested. To get back the value of an attribute, pass its name as an argument.
 
 `.cget(option)`
@@ -172,7 +172,6 @@ Bu metod içərisinə yazılmış string mətnin həmin font ilə yazılışı z
 
 `.metrics(option)`
 
-Əgər bu metodu arqumentsiz çağırsaq, bütün fontlar lüğətini döndürər. 
 \\\\\\\If you call this method with no arguments, it returns a dictionary of all the font metrics. You can retrieve the value of just one metric by passing its name as an argument. Metrics include:
 
 | Yazılışı | İzahı |
@@ -225,13 +224,13 @@ There are quite a number of different mouse cursors available. Their names and g
 
 There are three general methods for displaying graphic images in your Tkinter application.
 
-- To display bitmap (two-color) images in the `.xbm` format, refer to [The BitmapImage class](#The-BitmapImage-class)
+- To display bitmap (two-color) images in the `.xbm` format, refer to The BitmapImage class.
 
-- To display full-color images in the `.gif`, `.pgm`, or .ppm format, refer to [The PhotoImage class](#The-PhotoImage-class)
+- To display full-color images in the `.gif`, `.pgm`, or .ppm format, refer to The PhotoImage class.
 
 - The Python Imaging Library (PIL) supports images in a much wider variety of formats. Its ImageTk class is specifically designed for displaying images within Tkinter applications.
 
-#### The-BitmapImage-class
+- **The-BitmapImage-class**
 
 To display a two-color image in the .xbm format, you will need this constructor:
 
@@ -247,7 +246,7 @@ This constructor returns a value that can be used anywhere Tkinter expects an im
 `logo = tk.BitmapImage('logo.xbm', foreground='red')
 Label(image=logo).grid()`
 
-#### The-PhotoImage-class
+- **The-PhotoImage-class**
 
 To display a color image in `.gif`, `.pgm`, or `.ppm` format, you will need this constructor:
 
