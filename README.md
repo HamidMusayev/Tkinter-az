@@ -9,6 +9,7 @@
 
 # Mövzular
 
+> Giriş
 - [Standart parametrlər](#Standart-parametrlər)
 - [ttk modulu haqqında](#tkk-modulu-haqqında)
 - [Paketlərin import edilməsi](#Paketlərin-import-edilməsi)
