@@ -12,7 +12,7 @@
 > Giriş
 - [Standart parametrlər](#Standart-parametrlər)
 - [ttk modulu haqqında](#tkk-modulu-haqqında)
-- [Paketlərin import edilməsi](#Paketlərin-import-edilməsi)
+- [Modulların import edilməsi](#Modulların-import-edilməsi)
 > tkk widgetləri
 - [tkk.Button](#Button)
 - [tkk.Check button](#Check-button)
@@ -33,7 +33,7 @@
 - [tkk.Tree view](#Tree-view)
 - [Styling tkk widgets](#Styling-tkk-widgets)
 - [Methods common to all tkk widgets](#Methods-common-to-all-tkk-widgets)
-> Başqa tkinter widgetləri
+> Digər tkinter widgetləri
 - [Canvas](#Canvas)
 - [List box](#List-box)
 - [Menu](#Menu)
@@ -284,7 +284,7 @@ For example, a window created with `geometry='120x50-0+20'` would be 120 pixels 
 
 ## tkk-modulu-haqqında
 
-## Paketlərin-import-edilməsi
+## Modulların-import-edilməsi
 
 ## Widget-stilləri
 
