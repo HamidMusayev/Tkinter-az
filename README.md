@@ -184,17 +184,15 @@ Bu metod içərisinə yazılmış string mətnin həmin font ilə yazılışı z
 
 ### Kənarlar
 
-The Tkinter module defines a number of anchor constants that you can use to control where items are positioned relative to their context. For example, anchors can specify where a widget is located inside a frame when the frame is bigger than the widget.
+Tkinter modulu pəncərədə widgetlərin pəncərədə yerləşmə yerini müəyyən etmək üçün kompas cəhətlərindən istifadə edir. Hansı ki, `north`-şimal, `south`-cənub, `west`-sol, `east`-sağ.
 
-These constants are given as compass points, where north is up and west is to the left.
-
-The anchor constants are shown in this diagram:
+Kənar istiqamətləri və adları aşağıdakı kimidir:
 
 <img src="https://github.com/hemidvs/Tkinter/blob/master/ww_images/anchors.png" align="center" width="150">
 
-For example, if you create a small widget inside a large frame and use the `anchor=tk.SE` option, the widget will be placed in the bottom right corner of the frame. If you used `anchor=tk.N` instead, the widget would be centered along the top edge.
+Məsələn: Əgər boyük frame içərisində kiçik üidget yaratsaq, və `anchor=tk.SE` yazsaq, widget freymin aşağı sağ tərəfində yerləşəcək. Əgər əvəzinə `anchor=tk.N` yazsaq, widget yuxarı orta tərəfdə yerləşəcək.
 
-Anchors are also used to define where text is positioned relative to a reference point. For example, if you use `tk.CENTER` as a text anchor, the text will be centered horizontally and vertically around the reference point. Anchor `tk.NW` will position the text so that the reference point coincides with the northwest (top left) corner of the box containing the text. Anchor `tk.W` will center the text vertically around the reference point, with the left edge of the text box passing through that point, and so on.
+Bu funksiya həmçinin bizə mətnin yerləşməsini də təyin etmək imkanı verir. Məsələn, əgər text anchor kimi`tk.CENTER` versək, mətn üfüqi və şaquli olaraq mərkəzdə yazılar.
 
 ### Relief-stilləri
 
